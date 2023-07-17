@@ -1,0 +1,12 @@
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\Entities\obj\Debug\net6.0\ref\Entities.dll

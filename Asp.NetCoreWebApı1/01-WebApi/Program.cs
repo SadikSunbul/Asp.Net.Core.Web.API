@@ -1,19 +1,23 @@
-using _01_WebApi.Repositories;
+using _01_WebApi.extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Ripositories.EFCore;
 using System.Data.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddApplicationPart(typeof(Presentation.AsemblyRefence).Assembly) //buaradaký kodda apý kýsýmlarýný farklý yerde yazýcagým ýcýn oranýn assambly kýsmýný verdýk buraya ordan bulup alýcak 
+    .AddNewtonsoftJson();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddDbContext<RepositoryContex>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("mssql")));
+builder.Services.ConfigreSqlContext(builder.Configuration);
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigurationServiceManager();
 
 var app = builder.Build();
 

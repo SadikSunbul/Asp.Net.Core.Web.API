@@ -33,7 +33,20 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj"
+              },
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj"
+              },
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +62,10 @@
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.19, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -90,6 +107,273 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\artredline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artredline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj",
+        "projectName": "Presentation",
+        "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\artredline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artredline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj",
+        "projectName": "Ripositories",
+        "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj",
+        "packagesPath": "C:\\Users\\artredline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artredline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\artredline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artredline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj": {
+                "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
