@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contrant;
 using System;
@@ -24,16 +25,11 @@ namespace Presentation.Controllers
         [HttpGet]
         public IActionResult GetAllBoks()
         {
-            try
-            {
+            
                 var books = _manager.BookService.GetAllBooks(false);
                 return Ok(books);
-            }
-            catch (Exception)
-            {
-
-                throw new Exception("!!!");
-            }
+            
+            
         }
 
         #region Get (veri çekme )
@@ -48,7 +44,7 @@ namespace Presentation.Controllers
                 .GetOneBookById(id, false); //tek bır kayıt ayda bos ıse null doner
             if (book is null)
             {
-                return NotFound();//404
+                throw new BookNotFound(id); //kendi hatamızı kullandık 
             }
             return Ok(book);
         }
