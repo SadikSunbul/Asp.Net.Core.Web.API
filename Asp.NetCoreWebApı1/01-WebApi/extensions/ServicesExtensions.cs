@@ -8,7 +8,7 @@ namespace _01_WebApi.extensions
 {
     public static class ServicesExtensions
     {
-        public static void ConfigreSqlContext(this IServiceCollection services,IConfiguration configuration)
+        public static void ConfigreSqlContext(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<RepositoriesContext>(o => o.UseSqlServer(configuration.GetConnectionString("mssql")));
 
@@ -22,6 +22,11 @@ namespace _01_WebApi.extensions
         public static void ConfigurationServiceManager(this IServiceCollection services)
         {
             services.AddScoped<IServiceManager, ServiceManager>();
+        }
+
+        public static void ConfigureLoggerService(this IServiceCollection services)
+        {
+            services.AddSingleton<ILogerService, LogerManager>();
         }
     }
 }

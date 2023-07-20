@@ -13,11 +13,15 @@ namespace Services
     public class BookManager : IBookService
     {
         private readonly IRepositoryManager _manager;
+        private readonly ILogerService _logerService;
 
-        public BookManager(IRepositoryManager manager)
+        public BookManager(IRepositoryManager manager, ILogerService logerService)
         {
             _manager = manager;
+            _logerService = logerService;
         }
+
+
 
         public Book CreateOneBook(Book book)
         {
@@ -29,10 +33,12 @@ namespace Services
         public void DeleteOneBook(int id, bool tracking = true)
         {
             //check entıtıy
-            var entıty=_manager.Book.GetOneBooksById(id,tracking);
+            var entıty = _manager.Book.GetOneBooksById(id, tracking);
             if (entıty is null)
             {
-                throw new Exception($"book whit id: {id} could not found.");
+                string message= $"The book with id:{id} colf not found";
+                _logerService.LogInfo(message);
+                throw new Exception(message);
             }
             _manager.Book.DeleteOneBook(entıty);
             _manager.Save();
@@ -45,7 +51,7 @@ namespace Services
 
         public Book GetOneBookById(int id, bool tracking = true)
         {
-            return _manager.Book.GetOneBooksById(id,tracking);
+            return _manager.Book.GetOneBooksById(id, tracking);
         }
 
         public void UpdateOneBook(int id, Book book)
@@ -62,8 +68,8 @@ namespace Services
                 throw new ArgumentException(nameof(book));
 
             }
-            entity.Title=book.Title;
-            entity.Price=book.Price;
+            entity.Title = book.Title;
+            entity.Price = book.Price;
 
             _manager.Book.Update(entity);
             _manager.Save();

@@ -32,7 +32,7 @@ namespace Presentation.Controllers
             catch (Exception)
             {
 
-                throw;
+                throw new Exception("!!!");
             }
         }
 
