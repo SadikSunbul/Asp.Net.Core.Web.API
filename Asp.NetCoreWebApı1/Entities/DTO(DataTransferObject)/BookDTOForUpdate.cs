@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Entities.DTO_DataTransferObject_
 {
-    public record BookDTOForUpdate
+    public record BookDTOForUpdate : BookDtoForManipulation
     { //record clasa benzer DTO dan bahsedıyorsak ozellıklerı onemli
         //Readonly olmalıdır immutable 
         //Lınq 
         //ref type
         //ctor(dto)
+        [Required]
         public int Id { get; init; } //init olmalıdır sonra deger degısmez
-        public string Title { get; init; }
-        public decimal Price { get; init; }
+        //public string Title { get; init; }
+        //public decimal Price { get; init; }
     }
     // public record BookDTOForUpdate1(int id,string Title,decimal Price); //boylede kullanılır
 
@@ -29,11 +31,10 @@ namespace Entities.DTO_DataTransferObject_
     //}
 
     //böyle yazar isek karısık yazılardan kurtulur serilazer yazmaayda gerek yoktur
-    public record BookDto  
+    public record BookDto : BookDtoForManipulation
     {
         public int Id { get; init; }
-        public string Title { get; init; }
-        public decimal Price { get; init; }
+
     }
 
     /*

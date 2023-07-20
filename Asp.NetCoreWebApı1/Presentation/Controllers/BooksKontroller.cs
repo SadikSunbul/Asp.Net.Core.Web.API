@@ -52,12 +52,16 @@ namespace Presentation.Controllers
         #endregion
         #region Post (kaynak olusturma)
         [HttpPost] //kaynak olustur
-        public async Task<IActionResult> CreateOneBook([FromBody] Book book) //[FromBody] gelen requestin (gelen istek )badisinden alıcak veriyi
+        public async Task<IActionResult> CreateOneBook([FromBody] BookDto book) //[FromBody] gelen requestin (gelen istek )badisinden alıcak veriyi
         {
 
             if (book == null)
             {
                 return BadRequest(); //400 benım ıstedıgım turde degıl bu der
+            }
+            if (!ModelState.IsValid)
+            {
+                return UnprocessableEntity(ModelState);
             }
             _manager.BookService.CreateOneBook(book);
             return StatusCode(201, book);
@@ -69,6 +73,10 @@ namespace Presentation.Controllers
         public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] BookDTOForUpdate book)
         {
             //chechk book?
+            if (!ModelState.IsValid)
+            {
+                return UnprocessableEntity(ModelState);
+            }
             _manager.BookService.UpdateOneBook(id, book);
             return NoContent();
         }

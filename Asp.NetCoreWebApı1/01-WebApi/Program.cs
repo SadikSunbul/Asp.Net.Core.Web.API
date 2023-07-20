@@ -1,4 +1,5 @@
 using _01_WebApi.extensions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using NLog;
@@ -15,6 +16,7 @@ builder.Services.AddControllers(config=>
     config.RespectBrowserAcceptHeader = true;//default u false içerik pazarlýðýný açar
     config.ReturnHttpNotAcceptable = true; //kabul etmedýgýmýz formatlarý al dedik
 })
+    .AddCustomCsvFormatter() //csv formatýnda cýktý verir ama gerek yok 
     .AddXmlDataContractSerializerFormatters() //bunu ekleyince artýk xml formatýnda cýkýs verebýlýrýz
     .AddApplicationPart(typeof(Presentation.AsemblyRefence).Assembly) //buaradaký kodda apý kýsýmlarýný farklý yerde yazýcagým ýcýn oranýn assambly kýsmýný verdýk buraya ordan bulup alýcak 
     .AddNewtonsoftJson();
@@ -26,6 +28,12 @@ LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(),"/nlo
 // Directory.GetCurrentDirectory() bu klasor nerde calsýyor ýse onu al dedýk
 builder.Services.ConfigureLoggerService();
 
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+    //default olaný devre dýsý brakýr
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

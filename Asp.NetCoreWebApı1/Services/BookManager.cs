@@ -26,11 +26,12 @@ namespace Services
 
 
 
-        public Book CreateOneBook(Book book)
+        public BookDto CreateOneBook(BookDto book)
         {
-            _manager.Book.CreateOneBook(book);
+            var entity = _mapper.Map<Book>(book);
+            _manager.Book.CreateOneBook(entity);
             _manager.Save();
-            return book;
+            return _mapper.Map<BookDto>(entity);
         }
 
         public void DeleteOneBook(int id, bool tracking = true)
@@ -39,7 +40,7 @@ namespace Services
             var entıty = _manager.Book.GetOneBooksById(id, tracking);
             if (entıty is null)
             {
-                string message= $"The book with id:{id} colf not found";
+                string message = $"The book with id:{id} colf not found";
                 _logerService.LogInfo(message);
                 throw new Exception(message);
             }
@@ -55,9 +56,9 @@ namespace Services
             //boyle bı gecıs varmı yokmu confıge gıdıp eklenmelidir
         }
 
-        public Book GetOneBookById(int id, bool tracking = true)
+        public BookDto GetOneBookById(int id, bool tracking = true)
         {
-            return _manager.Book.GetOneBooksById(id, tracking);
+            return _mapper.Map<BookDto>(_manager.Book.GetOneBooksById(id, tracking));
         }
 
         public void UpdateOneBook(int id, BookDTOForUpdate bookDto)
@@ -78,7 +79,7 @@ namespace Services
             //entity.Title = book.Title;
             //entity.Price = book.Price;
 
-            entity=_mapper.Map<Book>(bookDto);
+            entity = _mapper.Map<Book>(bookDto);
             //Burada olan olay BookDto yu ---> Book a döndürdü
 
 

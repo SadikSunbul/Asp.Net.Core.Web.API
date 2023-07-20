@@ -10,6 +10,7 @@ namespace _01_WebApi.Utilities.Automaper
         {
             CreateMap<BookDTOForUpdate, Book>(); //tek yönlü bu 
             CreateMap<Book, BookDto>();
+            CreateMap<BookDto, Book>();
         }
     }
 }
