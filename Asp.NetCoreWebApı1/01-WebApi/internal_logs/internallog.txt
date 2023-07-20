@@ -12,3 +12,46 @@
 2023-07-20 08:07:15.6376 Info Message Template Auto Format enabled
 2023-07-20 08:07:15.7736 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-07-20 08:07:15.8223 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:22:28.2990 Info Message Template Auto Format enabled
+2023-07-20 14:22:28.4277 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:22:28.4797 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:23:43.0927 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 14:23:43.1224 Info LogFactory has been closed.
+2023-07-20 14:24:01.4893 Info Message Template Auto Format enabled
+2023-07-20 14:24:01.5765 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:24:01.6066 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:24:03.2639 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 14:24:03.2773 Info LogFactory has been closed.
+2023-07-20 14:25:30.2304 Info Message Template Auto Format enabled
+2023-07-20 14:25:30.3785 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:25:30.4304 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:38:22.5960 Info Message Template Auto Format enabled
+2023-07-20 14:38:22.7505 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:38:22.8707 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:40:37.7250 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 14:40:37.7500 Info LogFactory has been closed.
+2023-07-20 14:40:43.4880 Info Message Template Auto Format enabled
+2023-07-20 14:40:43.6533 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:40:43.7027 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:43:40.5490 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 14:43:40.5825 Info LogFactory has been closed.
+2023-07-20 14:44:49.2455 Info Message Template Auto Format enabled
+2023-07-20 14:44:49.4179 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:44:49.4742 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:47:28.1932 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 14:47:28.2296 Info LogFactory has been closed.
+2023-07-20 14:55:17.2462 Info Message Template Auto Format enabled
+2023-07-20 14:55:17.4511 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 14:55:17.5137 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 14:57:08.1413 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 14:57:08.1723 Info LogFactory has been closed.
+2023-07-20 15:10:08.4204 Info Message Template Auto Format enabled
+2023-07-20 15:10:08.5407 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 15:10:08.5828 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 15:10:34.9233 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 15:10:34.9419 Info LogFactory has been closed.
+2023-07-20 15:10:58.6081 Info Message Template Auto Format enabled
+2023-07-20 15:10:58.7350 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 15:10:58.7798 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-20 15:12:56.2245 Info AppDomain Shutting down. LogFactory closing...
+2023-07-20 15:12:56.2506 Info LogFactory has been closed.

@@ -10,7 +10,7 @@ namespace Services.Contrant
 {
     public interface IBookService
     {
-        IEnumerable<Book> GetAllBooks(bool tracking=true);
+        IEnumerable<BookDto> GetAllBooks(bool tracking=true);
         Book GetOneBookById(int id,bool tracking=true);
         Book CreateOneBook(Book book);
         void UpdateOneBook(int id, BookDTOForUpdate book);

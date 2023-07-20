@@ -10,7 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers()
+builder.Services.AddControllers(config=>
+{
+    config.RespectBrowserAcceptHeader = true;//default u false içerik pazarlýðýný açar
+    config.ReturnHttpNotAcceptable = true; //kabul etmedýgýmýz formatlarý al dedik
+})
+    .AddXmlDataContractSerializerFormatters() //bunu ekleyince artýk xml formatýnda cýkýs verebýlýrýz
     .AddApplicationPart(typeof(Presentation.AsemblyRefence).Assembly) //buaradaký kodda apý kýsýmlarýný farklý yerde yazýcagým ýcýn oranýn assambly kýsmýný verdýk buraya ordan bulup alýcak 
     .AddNewtonsoftJson();
 

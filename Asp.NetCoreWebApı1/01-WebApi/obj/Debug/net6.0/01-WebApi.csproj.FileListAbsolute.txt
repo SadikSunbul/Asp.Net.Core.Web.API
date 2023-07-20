@@ -101,3 +101,5 @@ C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\b
 C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\bin\Debug\net6.0\nlog.config
 C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\bin\Debug\net6.0\NLog.dll
 C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
