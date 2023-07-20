@@ -29,6 +29,9 @@ builder.Services.ConfigreSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigurationServiceManager();
 
+builder.Services.AddAutoMapper(typeof(Program));
+
+
 var app = builder.Build();
 
 var logger=app.Services.GetRequiredService<ILogerService>(); //bu servise ihtiyacým var dedik bunu bana kontrattan çöz getir dedik 

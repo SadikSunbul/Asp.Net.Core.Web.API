@@ -1,4 +1,5 @@
-﻿using Entities.Exceptions;
+﻿using Entities.DTO_DataTransferObject_;
+using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contrant;
@@ -65,7 +66,7 @@ namespace Presentation.Controllers
         #region Put (güncelleme)
 
         [HttpPut("{id:int}")]
-        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] Book book)
+        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] BookDTOForUpdate book)
         {
             //chechk book?
             _manager.BookService.UpdateOneBook(id, book);

@@ -1,4 +1,6 @@
-﻿using Entities.Models;
+﻿using AutoMapper;
+using Entities.DTO_DataTransferObject_;
+using Entities.Models;
 using Ripositories.Contracts;
 using Services.Contrant;
 using System;
@@ -14,11 +16,12 @@ namespace Services
     {
         private readonly IRepositoryManager _manager;
         private readonly ILogerService _logerService;
-
-        public BookManager(IRepositoryManager manager, ILogerService logerService)
+        private readonly IMapper _mapper;
+        public BookManager(IRepositoryManager manager, ILogerService logerService, IMapper mapper)
         {
             _manager = manager;
             _logerService = logerService;
+            _mapper = mapper;
         }
 
 
@@ -54,7 +57,7 @@ namespace Services
             return _manager.Book.GetOneBooksById(id, tracking);
         }
 
-        public void UpdateOneBook(int id, Book book)
+        public void UpdateOneBook(int id, BookDTOForUpdate bookDto)
         {
             var entity = _manager.Book.GetOneBooksById(id);
             if (entity is null)
@@ -63,13 +66,18 @@ namespace Services
             }
 
             //check parms
-            if (book is null)
+            if (bookDto is null)
             {
-                throw new ArgumentException(nameof(book));
+                throw new ArgumentException(nameof(bookDto));
 
             }
-            entity.Title = book.Title;
-            entity.Price = book.Price;
+            //Mappıng
+            //entity.Title = book.Title;
+            //entity.Price = book.Price;
+
+            entity=_mapper.Map<Book>(bookDto);
+            //Burada olan olay BookDto yu ---> Book a döndürdü
+
 
             _manager.Book.Update(entity);
             _manager.Save();

@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.DTO_DataTransferObject_;
+using Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Services.Contrant
         IEnumerable<Book> GetAllBooks(bool tracking=true);
         Book GetOneBookById(int id,bool tracking=true);
         Book CreateOneBook(Book book);
-        void UpdateOneBook(int id, Book book);
+        void UpdateOneBook(int id, BookDTOForUpdate book);
         void DeleteOneBook(int id,bool tracking=true);
     }
 }
