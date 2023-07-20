@@ -13,7 +13,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/books")]
-    public class BooksKontroller:ControllerBase
+    public class BooksKontroller : ControllerBase
     {
 
         private readonly IServiceManager _manager;
@@ -24,25 +24,25 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllBoks()
+        public async Task<IActionResult> GetAllBoks()
         {
-            
-                var books = _manager.BookService.GetAllBooks(false);
-                return Ok(books);
-            
-            
+
+            var books = await _manager.BookService.GetAllBooksAsync(false);
+            return Ok(books);
+
+
         }
 
         #region Get (veri çekme )
 
         [HttpGet("{id:int}")] //"int/{id:int}" . :int Şablonun bölümü, yol değerlerini tamsayıya dönüştürülebilecek dizelerle kısıtlarid. için bir /api/test2/int/abcGET isteği:
                               // Bu eylemle eşleşmiyor.
-        public IActionResult GetOneBooks([FromRoute(Name = "id")] int id) //[FromRoute(Name ="id")] --> linkden gelıcek adı id olanın degerini buraya ata dedik
+        public async Task<IActionResult> GetOneBooks([FromRoute(Name = "id")] int id) //[FromRoute(Name ="id")] --> linkden gelıcek adı id olanın degerini buraya ata dedik
         {
 
-            var book = _manager
+            var book = await _manager
                 .BookService
-                .GetOneBookById(id, false); //tek bır kayıt ayda bos ıse null doner
+                .GetOneBookByIdAsync(id, false); //tek bır kayıt ayda bos ıse null doner
             if (book is null)
             {
                 throw new BookNotFound(id); //kendi hatamızı kullandık 
@@ -63,21 +63,21 @@ namespace Presentation.Controllers
             {
                 return UnprocessableEntity(ModelState);
             }
-            _manager.BookService.CreateOneBook(book);
+            await _manager.BookService.CreateOneBookAsync(book);
             return StatusCode(201, book);
         }
         #endregion
         #region Put (güncelleme)
 
         [HttpPut("{id:int}")]
-        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] BookDTOForUpdate book)
+        public async Task<IActionResult> UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] BookDTOForUpdate book)
         {
             //chechk book?
             if (!ModelState.IsValid)
             {
                 return UnprocessableEntity(ModelState);
             }
-            _manager.BookService.UpdateOneBook(id, book);
+            await _manager.BookService.UpdateOneBookAsync(id, book);
             return NoContent();
         }
 
@@ -85,9 +85,9 @@ namespace Presentation.Controllers
         #region Delete (silme)
 
         [HttpDelete("{id:int}")]
-        public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
+        public async Task<IActionResult> DeleteOneBook([FromRoute(Name = "id")] int id)
         {
-            _manager.BookService.DeleteOneBook(id);
+            await _manager.BookService.DeleteOneBookAsync(id);
             return NoContent();
         }
 

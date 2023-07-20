@@ -10,10 +10,10 @@ namespace Services.Contrant
 {
     public interface IBookService
     {
-        IEnumerable<BookDto> GetAllBooks(bool tracking = true);
-        BookDto GetOneBookById(int id, bool tracking = true);
-        BookDto CreateOneBook(BookDto book);
-        void UpdateOneBook(int id, BookDTOForUpdate book);
-        void DeleteOneBook(int id, bool tracking = true);
+        Task<IEnumerable<BookDto>> GetAllBooksAsync(bool tracking = true);
+        Task<BookDto> GetOneBookByIdAsync(int id, bool tracking = true);
+        Task<BookDto> CreateOneBookAsync(BookDto book);
+        Task UpdateOneBookAsync(int id, BookDTOForUpdate book);
+        Task DeleteOneBookAsync(int id, bool tracking = true);
     }
 }

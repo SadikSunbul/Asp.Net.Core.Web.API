@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Ripositories.Contracts
 {
-    public interface IBookRepository:IRepositoryBase<Book>
+    public interface IBookRepository : IRepositoryBase<Book>
     {
-        IQueryable<Book> GetAllBooks(bool tracking=true);
-        Book GetOneBooksById(int id,bool tracking=true);
+        Task<IEnumerable<Book>> GetAllBooksAsync(bool tracking = true);
+        Task<Book> GetOneBooksByIdAsync(int id, bool tracking = true);
         void CreateOneBook(Book book);
         void UpdateOneBook(Book book);
         void DeleteOneBook(Book book);

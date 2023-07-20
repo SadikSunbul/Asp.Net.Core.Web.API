@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using Ripositories.Contracts;
 using System;
 using System.Collections.Generic;
@@ -17,12 +18,12 @@ namespace Ripositories.EFCore
 
         public void CreateOneBook(Book book) => Create(book);
 
-        public void DeleteOneBook(Book book)=>Delete(book);
+        public void DeleteOneBook(Book book) => Delete(book);
 
-        public IQueryable<Book> GetAllBooks(bool tracking = true)=>FindAll(tracking);
+        public async Task<IEnumerable<Book>> GetAllBooksAsync(bool tracking = true) => await FindAll(tracking).ToListAsync();
 
-        public Book GetOneBooksById(int id, bool tracking = true) => FinByCondition(B => B.Id.Equals(id), tracking).OrderBy(b=>b.Id).SingleOrDefault();
+        public async Task<Book> GetOneBooksByIdAsync(int id, bool tracking = true) => await FinByCondition(B => B.Id.Equals(id), tracking).OrderBy(b => b.Id).SingleOrDefaultAsync();
 
-        public void UpdateOneBook(Book book)=>Update(book);
+        public void UpdateOneBook(Book book) => Update(book);
     }
 }

@@ -20,6 +20,6 @@ namespace Ripositories.EFCore
 
         public IBookRepository Book => _bookrepository.Value;
 
-        public void Save() => _context.SaveChanges();
+        public async Task SaveAsync() => await _context.SaveChangesAsync();
     }
 }

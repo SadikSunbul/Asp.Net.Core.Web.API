@@ -9,6 +9,6 @@ namespace Ripositories.Contracts
     public interface IRepositoryManager
     {
         IBookRepository Book { get; }
-        void Save();
+        Task SaveAsync(); //Task<void> hatalıdır ->Task yazılır
     }
 }
