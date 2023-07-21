@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Entities.DTO_DataTransferObject_;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Ripositories.Contracts;
 using Services.Contrant;
 using System;
@@ -37,31 +38,28 @@ namespace Services
         public async Task DeleteOneBookAsync(int id, bool tracking = true)
         {
             //check entıtıy
-            var entıty = await _manager.Book.GetOneBooksByIdAsync(id, tracking);
-            if (entıty is null)
-            {
-                string message = $"The book with id:{id} colf not found";
-                _logerService.LogInfo(message);
-                throw new Exception(message);
-            }
+            var entıty = await GetOneBookAndChackExits(id, tracking);
             _manager.Book.DeleteOneBook(entıty);
             await _manager.SaveAsync();
         }
 
-        public async Task<IEnumerable<BookDto>> GetAllBooksAsync(bool tracking = true)
+        public async Task<(IEnumerable<BookDto> books, MetaData metaData)> GetAllBooksAsync(BookParameters bookParameters, bool tracking = true)
         {
-            var books = await _manager.Book.GetAllBooksAsync();
-            return _mapper.Map<IEnumerable<BookDto>>(books);
+            var bookswithMetaData = await _manager.Book.GetAllBooksAsync(bookParameters);
+
+            var bookdDto = _mapper.Map<IEnumerable<BookDto>>(bookswithMetaData);
             //IEnumerable<BookDto> TÜRÜNE döndür book u
             //boyle bı gecıs varmı yokmu confıge gıdıp eklenmelidir
+            return (bookdDto, bookswithMetaData.MetaData);
         }
 
         public async Task<BookDto> GetOneBookByIdAsync(int id, bool tracking = true)
         {
+            var book = await GetOneBookAndChackExits(id, tracking);
             return _mapper.Map<BookDto>(await _manager.Book.GetOneBooksByIdAsync(id, tracking));
         }
 
-        
+
 
         public async Task UpdateOneBookAsync(int id, BookDTOForUpdate bookDto)
         {
@@ -88,6 +86,18 @@ namespace Services
             _manager.Book.Update(entity);
             await _manager.SaveAsync();
 
+        }
+
+        private async Task<Book> GetOneBookAndChackExits(int id, bool tracking)
+        {
+            var entıty = await _manager.Book.GetOneBooksByIdAsync(id, tracking);
+            if (entıty is null)
+            {
+                string message = $"The book with id:{id} colf not found";
+                _logerService.LogInfo(message);
+                throw new Exception(message);
+            }
+            return entıty;
         }
     }
 }

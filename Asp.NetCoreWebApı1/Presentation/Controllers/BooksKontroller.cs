@@ -1,16 +1,20 @@
 ﻿using Entities.DTO_DataTransferObject_;
 using Entities.Exceptions;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Mvc;
+using Presentation.ActionFilter;
 using Services.Contrant;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
+    [ServiceFilter(typeof(LoFilterAttribute))]
     [ApiController]
     [Route("api/books")]
     public class BooksKontroller : ControllerBase
@@ -24,11 +28,14 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllBoks()
+        public async Task<IActionResult> GetAllBooksAsync([FromRoute] BookParameters param)
         {
 
-            var books = await _manager.BookService.GetAllBooksAsync(false);
-            return Ok(books);
+            var pagedResult = await _manager.BookService.GetAllBooksAsync(param, false);
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(pagedResult.metaData));
+
+            return Ok(pagedResult.books);
 
 
         }
@@ -51,6 +58,8 @@ namespace Presentation.Controllers
         }
         #endregion
         #region Post (kaynak olusturma)
+
+        [ServiceFilter(typeof(ValidationFilterAttribut))] //bunun la artık null kontrolu ve hata kontrolu ne gerek yoktur zaten ıcınde yazdık onları
         [HttpPost] //kaynak olustur
         public async Task<IActionResult> CreateOneBook([FromBody] BookDto book) //[FromBody] gelen requestin (gelen istek )badisinden alıcak veriyi
         {
@@ -59,7 +68,7 @@ namespace Presentation.Controllers
             {
                 return BadRequest(); //400 benım ıstedıgım turde degıl bu der
             }
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) //bunu atrubut tarafında kontrol edıcez artık buradan silcez
             {
                 return UnprocessableEntity(ModelState);
             }

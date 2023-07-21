@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using NLog;
+using Presentation.ActionFilter;
 using Ripositories.EFCore;
 using Services.Contrant;
 using System.Data.Common;
@@ -20,6 +21,9 @@ builder.Services.AddControllers(config=>
     .AddXmlDataContractSerializerFormatters() //bunu ekleyince artýk xml formatýnda cýkýs verebýlýrýz
     .AddApplicationPart(typeof(Presentation.AsemblyRefence).Assembly) //buaradaký kodda apý kýsýmlarýný farklý yerde yazýcagým ýcýn oranýn assambly kýsmýný verdýk buraya ordan bulup alýcak 
     .AddNewtonsoftJson();
+
+
+
 
 
 //LoadConfiguration config yukle 
@@ -41,6 +45,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigreSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigurationServiceManager();
+builder.Services.ConfigurActionFilters();
 
 builder.Services.AddAutoMapper(typeof(Program));
 

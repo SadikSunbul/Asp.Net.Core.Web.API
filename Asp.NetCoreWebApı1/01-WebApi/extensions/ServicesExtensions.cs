@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.Internal;
+using Presentation.ActionFilter;
 using Ripositories.Contracts;
 using Ripositories.EFCore;
 using Services;
@@ -27,6 +29,11 @@ namespace _01_WebApi.extensions
         public static void ConfigureLoggerService(this IServiceCollection services)
         {
             services.AddSingleton<ILogerService, LogerManager>();
+        }
+        public static void ConfigurActionFilters(this IServiceCollection services)
+        {
+            services.AddScoped<ValidationFilterAttribut>();
+            services.AddSingleton<LoFilterAttribute>();
         }
     }
 }
