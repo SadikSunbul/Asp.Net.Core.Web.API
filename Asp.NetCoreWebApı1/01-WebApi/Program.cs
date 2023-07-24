@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers(config=>
+builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;//default u false içerik pazarlýðýný açar
     config.ReturnHttpNotAcceptable = true; //kabul etmedýgýmýz formatlarý al dedik
@@ -27,7 +27,7 @@ builder.Services.AddControllers(config=>
 
 
 //LoadConfiguration config yukle 
-LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(),"/nlog.config")); //String.Concat birleþtir 
+LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config")); //String.Concat birleþtir 
 
 // Directory.GetCurrentDirectory() bu klasor nerde calsýyor ýse onu al dedýk
 builder.Services.ConfigureLoggerService();
@@ -48,11 +48,13 @@ builder.Services.ConfigurationServiceManager();
 builder.Services.ConfigurActionFilters();
 
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureCors();
+builder.Services.ConfigureDataShaper();
 
 
 var app = builder.Build();
 
-var logger=app.Services.GetRequiredService<ILogerService>(); //bu servise ihtiyacým var dedik bunu bana kontrattan çöz getir dedik 
+var logger = app.Services.GetRequiredService<ILogerService>(); //bu servise ihtiyacým var dedik bunu bana kontrattan çöz getir dedik 
 
 
 app.ConfigureExeptiomHandler(logger);//usteký logerý verdik
@@ -71,6 +73,8 @@ if (app.Environment.IsProduction()) //productýon ortamýnda ýse
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 

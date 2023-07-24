@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.DTO_DataTransferObject_;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using Presentation.ActionFilter;
 using Ripositories.Contracts;
@@ -34,6 +35,24 @@ namespace _01_WebApi.extensions
         {
             services.AddScoped<ValidationFilterAttribut>();
             services.AddSingleton<LoFilterAttribute>();
+        }
+
+        public static void ConfigureCors(this IServiceCollection services)
+        {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder.AllowAnyOrigin()//tum kokenlere ızın ver
+                            .AllowAnyMethod() //tum metotlara ızın ver
+                            .AllowAnyHeader()//tum headerlara ızın ver 
+                            .WithExposedHeaders("X-Pagination");
+                });
+            });
+        }
+        public static void ConfigureDataShaper(this IServiceCollection services)
+        {
+            services.AddScoped<IDataShaper<BookDto>, DataShaper<BookDto>>();
         }
     }
 }

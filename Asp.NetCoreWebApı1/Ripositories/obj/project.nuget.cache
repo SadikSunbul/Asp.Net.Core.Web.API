@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mfr5dHJWkAUb6ew4Xupg1IlQSdynLkC9y+opXZ35wqQ0R92ATcaiPirqOoHj7KPziDQ2wA6KfJtD8oMMrqQZ5Q==",
+  "dgSpecHash": "EE7V/8SAB9NLFJIg85PfEneoyu0CkII2OTQmsy/ooHin7TB8HXOxQvUg8ESC4n1E2Ift9AXvWyvRlJunyRX5hA==",
   "success": true,
   "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Ripositories\\Ripositories.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\system.linq.dynamic.core\\1.3.3\\system.linq.dynamic.core.1.3.3.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

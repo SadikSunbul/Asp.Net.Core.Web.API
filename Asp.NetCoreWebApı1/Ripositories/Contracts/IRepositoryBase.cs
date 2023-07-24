@@ -9,7 +9,7 @@ namespace Ripositories.Contracts
 {
     public interface IRepositoryBase<T>
     {
-        IQueryable<T> FindAll(bool trackChanges=true);
+        IQueryable<T> FindByCondition(bool trackChanges=true);
         IQueryable<T> FinByCondition(Expression<Func<T,bool>> expresion,bool trackChanges=true);
         void Create(T entity);  
         void Update(T entity);  

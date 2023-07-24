@@ -1,11 +1,13 @@
 ﻿using AutoMapper;
 using Entities.DTO_DataTransferObject_;
+using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Ripositories.Contracts;
 using Services.Contrant;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
@@ -18,11 +20,13 @@ namespace Services
         private readonly IRepositoryManager _manager;
         private readonly ILogerService _logerService;
         private readonly IMapper _mapper;
-        public BookManager(IRepositoryManager manager, ILogerService logerService, IMapper mapper)
+        private readonly IDataShaper<BookDto> shaper;
+        public BookManager(IRepositoryManager manager, ILogerService logerService, IMapper mapper, IDataShaper<BookDto> shaper)
         {
             _manager = manager;
             _logerService = logerService;
             _mapper = mapper;
+            this.shaper = shaper;
         }
 
 
@@ -43,14 +47,19 @@ namespace Services
             await _manager.SaveAsync();
         }
 
-        public async Task<(IEnumerable<BookDto> books, MetaData metaData)> GetAllBooksAsync(BookParameters bookParameters, bool tracking = true)
+        public async Task<(IEnumerable<ExpandoObject> books, MetaData metaData)> GetAllBooksAsync(BookParameters bookParameters, bool tracking = true)
         {
+            if (!bookParameters.ValidPriceRange)
+            {
+                throw new PriceOutıofRangeBadRequestException();
+            }
             var bookswithMetaData = await _manager.Book.GetAllBooksAsync(bookParameters);
 
             var bookdDto = _mapper.Map<IEnumerable<BookDto>>(bookswithMetaData);
             //IEnumerable<BookDto> TÜRÜNE döndür book u
             //boyle bı gecıs varmı yokmu confıge gıdıp eklenmelidir
-            return (bookdDto, bookswithMetaData.MetaData);
+            var shapedData = shaper.ShapeData(bookdDto, bookParameters.Fields);
+            return (books: shapedData, metaData: bookswithMetaData.MetaData);
         }
 
         public async Task<BookDto> GetOneBookByIdAsync(int id, bool tracking = true)

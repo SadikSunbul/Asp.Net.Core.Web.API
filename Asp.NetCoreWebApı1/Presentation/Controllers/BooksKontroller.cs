@@ -28,7 +28,7 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllBooksAsync([FromRoute] BookParameters param)
+        public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters param)
         {
 
             var pagedResult = await _manager.BookService.GetAllBooksAsync(param, false);

@@ -24,7 +24,7 @@ namespace Ripositories.EFCore
 
         public IQueryable<T> FinByCondition(Expression<Func<T, bool>> expresion, bool trackChanges = true) => !trackChanges ? _context.Set<T>().Where(expresion).AsNoTracking() : _context.Set<T>().Where(expresion);
 
-        public IQueryable<T> FindAll(bool trackChanges = true) => !trackChanges ? _context.Set<T>().AsNoTracking() : _context.Set<T>();
+        public IQueryable<T> FindByCondition(bool trackChanges = true) => !trackChanges ? _context.Set<T>().AsNoTracking() : _context.Set<T>();
 
         public void Update(T entity) => _context.Set<T>().Update(entity);
     }

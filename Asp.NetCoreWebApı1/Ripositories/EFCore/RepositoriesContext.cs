@@ -14,6 +14,7 @@ namespace Ripositories.EFCore
     {
         public RepositoriesContext(DbContextOptions options) : base(options)
         {
+
         }
         public DbSet<Book> Books { get; set; }
 

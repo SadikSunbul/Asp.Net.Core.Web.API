@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RFiTDmuM3nXFuvDrX7HDawc+WjVwbSzhbc6QFLVhiwnlyxtQP7mYs2V7CMyYJ3vL3wiV/LrfAfdMRDpbS7ALGg==",
+  "dgSpecHash": "2PnkFWFB6unCh8HuyOK5C084c1ltJh8E1ax6bsltE6aw7jSODqu6fmjsox0DyrViJKmIDoCDRK4IGRFLikqfEQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\01-WebApi\\01-WebApi.csproj",
   "expectedPackageFiles": [
@@ -85,6 +85,7 @@
     "C:\\Users\\artredline\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.21.0\\system.identitymodel.tokens.jwt.6.21.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\system.linq.dynamic.core\\1.3.3\\system.linq.dynamic.core.1.3.3.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

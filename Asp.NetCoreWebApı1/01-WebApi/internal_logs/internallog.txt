@@ -76,3 +76,9 @@
 2023-07-21 11:07:14.7284 Info Message Template Auto Format enabled
 2023-07-21 11:07:14.8860 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-07-21 11:07:14.9309 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-22 10:07:32.4124 Info Message Template Auto Format enabled
+2023-07-22 10:07:32.6660 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 10:07:32.7441 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
+2023-07-22 10:11:16.9830 Info Message Template Auto Format enabled
+2023-07-22 10:11:17.1537 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 10:11:17.2059 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Asp.Net.Core.Web.API\Asp.NetCoreWebApı1\01-WebApi\nlog.config
