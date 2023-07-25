@@ -1,4 +1,5 @@
 using _01_WebApi.extensions;
+using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -59,6 +60,12 @@ builder.Services.AddScoped<IBookLinks, BookLinks>();
 
 builder.Services.ConfigureVersioning();
 builder.Services.ConfugerResponseCaching();
+builder.Services.ConfigureHttpCachHeaders();
+
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();  
+
+builder.Services.AddMemoryCache();//Isteklerý saycagýmýz ýcýn buna ýhtýyacýmýz var 
 
 var app = builder.Build();
 
@@ -82,8 +89,11 @@ if (app.Environment.IsProduction()) //productýon ortamýnda ýse
 
 app.UseHttpsRedirection();
 
+app.UseIpRateLimiting();
+
 app.UseCors("CorsPolicy");
 app.UseResponseCaching(); //Corstan sonra cachýng cagrýlmasý onerýlýr
+app.UseHttpCacheHeaders();
 
 
 app.UseAuthorization();

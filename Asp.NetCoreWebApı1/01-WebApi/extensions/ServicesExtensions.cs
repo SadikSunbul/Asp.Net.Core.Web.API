@@ -1,5 +1,7 @@
-﻿using Entities.DTO_DataTransferObject_;
+﻿using AspNetCoreRateLimit;
+using Entities.DTO_DataTransferObject_;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
@@ -105,5 +107,42 @@ namespace _01_WebApi.extensions
         }
 
         public static void ConfugerResponseCaching(this IServiceCollection services) => services.AddResponseCaching();
+
+        public static void ConfigureHttpCachHeaders(this IServiceCollection services) => services.AddHttpCacheHeaders(expresionOptions =>
+        {
+            expresionOptions.MaxAge = 90;
+            expresionOptions.CacheLocation = Marvin.Cache.Headers.CacheLocation.Public;
+        },
+         validationopt =>
+         {
+             validationopt.MustRevalidate = false; //yenıden valıdet eme kapalı
+         });
+
+
+        public static void ConfigureRateLimitingOptions(this IServiceCollection services)
+        {
+            //KURAL LISTESİ
+            var ratelimitRules = new List<RateLimitRule>()
+            {
+                new RateLimitRule() //1 dakıkada sadece 3 ıstek 
+                {
+                    Endpoint="*",//hepsını kapsasın
+                    Limit=3,//kaıkada 3 istek alalım 
+                    Period="1m"
+                }
+            };
+
+            services.Configure<IpRateLimitOptions>(opt =>
+            {
+                opt.GeneralRules = ratelimitRules;
+            });
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+
+        }
     }
+
+
 }

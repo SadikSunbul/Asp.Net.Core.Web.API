@@ -2,6 +2,7 @@
 using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilter;
 using Services.Contrant;
@@ -19,7 +20,8 @@ namespace Presentation.Controllers
     [ApiController]
     //[Route("api/{v:apiversion}/books")]
     [Route("api/books")]
-    [ResponseCache(CacheProfileName = "5mins")]
+    //[ResponseCache(CacheProfileName = "5mins")]
+    [HttpCacheExpiration(CacheLocation=CacheLocation.Public,MaxAge =80)]
     public class BooksKontroller : ControllerBase
     {
 

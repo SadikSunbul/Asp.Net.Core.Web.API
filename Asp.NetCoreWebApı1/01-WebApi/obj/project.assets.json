@@ -2,6 +2,24 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AspNetCoreRateLimit/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.3",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "lib/net6.0/AspNetCoreRateLimit.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/AspNetCoreRateLimit.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "AutoMapper/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -88,13 +106,13 @@
           }
         }
       },
-      "Marvin.Cache.Headers/6.1.0": {
+      "Marvin.Cache.Headers/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Marvin.Cache.Headers.dll": {}
+          "lib/net5.0/Marvin.Cache.Headers.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Marvin.Cache.Headers.dll": {}
+          "lib/net5.0/Marvin.Cache.Headers.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -1142,15 +1160,15 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         }
@@ -1785,7 +1803,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Marvin.Cache.Headers": "6.1.0",
+          "Marvin.Cache.Headers": "6.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.1.0",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Services": "1.0.0"
@@ -1835,6 +1853,18 @@
     }
   },
   "libraries": {
+    "AspNetCoreRateLimit/5.0.0": {
+      "sha512": "6fq9+o1maGADUmpK/PvcF0DtXW2+7bSkIL7MDIo/agbIHKN8XkMQF4oze60DO731WaQmHmK260hB30FwPzCmEg==",
+      "type": "package",
+      "path": "aspnetcoreratelimit/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcoreratelimit.5.0.0.nupkg.sha512",
+        "aspnetcoreratelimit.nuspec",
+        "lib/net6.0/AspNetCoreRateLimit.dll"
+      ]
+    },
     "AutoMapper/12.0.1": {
       "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
       "type": "package",
@@ -1920,18 +1950,17 @@
         "logo.png"
       ]
     },
-    "Marvin.Cache.Headers/6.1.0": {
-      "sha512": "XHUeOdMfZrtRHXsWiqRUrebBl4U2SGew8Cr7Y/tHaGfiY/fbajnq4vRt5ktlkUnMebcpfvl8RJjAglu1KxWwYQ==",
+    "Marvin.Cache.Headers/6.0.0": {
+      "sha512": "LYI20j8gPVDpvlvjHk0weRMBLNrU9vCl/zhYFe0H/p5UULHHdw5krZ5TlKvcumSbQMP0oYYc2oFJvXJ7uT0ViA==",
       "type": "package",
-      "path": "marvin.cache.headers/6.1.0",
+      "path": "marvin.cache.headers/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "lib/net5.0/Marvin.Cache.Headers.dll",
-        "lib/net6.0/Marvin.Cache.Headers.dll",
         "lib/netcoreapp3.1/Marvin.Cache.Headers.dll",
-        "marvin.cache.headers.6.1.0.nupkg.sha512",
+        "marvin.cache.headers.6.0.0.nupkg.sha512",
         "marvin.cache.headers.nuspec"
       ]
     },
@@ -3211,14 +3240,15 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/13.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -3227,13 +3257,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -4839,6 +4871,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AspNetCoreRateLimit >= 5.0.0",
       "Entities >= 1.0.0",
       "Microsoft.AspNetCore.JsonPatch >= 7.0.8",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.19",
@@ -4911,6 +4944,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AspNetCoreRateLimit": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[7.0.8, )"
