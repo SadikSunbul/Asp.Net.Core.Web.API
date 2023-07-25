@@ -28,14 +28,22 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(ValidateMediaTypeAtribut))]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters param)
         {
+            var linkparameters = new LinkParameters()
+            {
+                BookParameters = param,
+                HttpContext = HttpContext
+            };
 
-            var pagedResult = await _manager.BookService.GetAllBooksAsync(param, false);
+            var linkresult = await _manager.BookService.GetAllBooksAsync(linkparameters, false);
 
-            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(pagedResult.metaData));
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(linkresult.metaData));
 
-            return Ok(pagedResult.books);
+            return linkresult.linkRespons.HasLinks ? 
+                Ok(linkresult.linkRespons.LinkedEntities) :
+                Ok(linkresult.linkRespons.ShapedEntites);
 
 
         }
@@ -101,6 +109,19 @@ namespace Presentation.Controllers
         }
 
         #endregion
+
+        [HttpOptions]
+        public IActionResult GetBookOptions()
+        {
+            Response.Headers.Add("Allow", "GET,PUT,POST,PATCH,DELETE,HEAD,OPTIONS");
+            return Ok();
+        }
+
+        [HttpHead] //get ile aynı işlevlere sahiptir head olanlarda request badisi olmaz
+        public IActionResult a()
+        {
+            return Ok();
+        }
 
     }
 }

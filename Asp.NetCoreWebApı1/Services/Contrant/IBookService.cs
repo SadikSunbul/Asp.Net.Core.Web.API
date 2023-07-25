@@ -1,4 +1,5 @@
 ﻿using Entities.DTO_DataTransferObject_;
+using Entities.LinkModels;
 using Entities.Models;
 using Entities.RequestFeatures;
 using System;
@@ -12,7 +13,7 @@ namespace Services.Contrant
 {
     public interface IBookService
     {
-        Task<(IEnumerable<ExpandoObject> books, MetaData metaData)> GetAllBooksAsync(BookParameters bookParameters, bool tracking = true);
+        Task<(LinkRespons linkRespons, MetaData metaData)> GetAllBooksAsync(LinkParameters linkParameters, bool tracking = true);
         Task<BookDto> GetOneBookByIdAsync(int id, bool tracking = true);
         Task<BookDto> CreateOneBookAsync(BookDto book);
         Task UpdateOneBookAsync(int id, BookDTOForUpdate book);

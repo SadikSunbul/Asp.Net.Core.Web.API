@@ -45,10 +45,12 @@ namespace _003_ProductApp.Controllers
             return Ok(products);
         }
         [HttpPost]
-        public IActionResult GetAllProducts([FromBody]Product product) //requestın badısınden gelın dedık [FromBody]
+        public IActionResult GetAllProducts([FromBody] Product product) //requestın badısınden gelın dedık [FromBody]
         {
             logger.LogWarning("product kaynak olusturuldu");
             return StatusCode(201);//created.
         }
+
+        
     }
 }

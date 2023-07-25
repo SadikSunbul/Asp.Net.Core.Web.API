@@ -1,0 +1,2 @@
+2023-07-24 08:41:54.3856 INFO {"ModelName":"OnActionExecuting","Controller":"BooksKontroller","Action":"GetBookOptions","Id":null,"CreateAt":"2023-07-24T05:41:54.3328711Z"}
+2023-07-24 08:45:48.2924 INFO {"ModelName":"OnActionExecuting","Controller":"BooksKontroller","Action":"a","Id":null,"CreateAt":"2023-07-24T05:45:48.2499814Z"}

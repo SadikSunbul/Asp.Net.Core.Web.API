@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "IbqUggmb9RcIQOjiK43eqopn2gJhARNVtYTwc0kjoUVWZXCxgaA7MTc8ScVEoXfjtNV0x9WXCMdKZAIKm+BkKQ==",
+  "dgSpecHash": "5yc/pz3PpeU3MnAKtF7hHotHU7Kvr++QRzfFFNLRJvaV2hd8D02CeWiJe5RM399+1B+niBE72XxpfIAE2rjhLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Entities\\Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

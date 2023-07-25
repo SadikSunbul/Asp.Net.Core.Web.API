@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using NLog;
 using Presentation.ActionFilter;
 using Ripositories.EFCore;
+using Services;
 using Services.Contrant;
 using System.Data.Common;
 
@@ -17,10 +18,10 @@ builder.Services.AddControllers(config =>
     config.RespectBrowserAcceptHeader = true;//default u false içerik pazarlýðýný açar
     config.ReturnHttpNotAcceptable = true; //kabul etmedýgýmýz formatlarý al dedik
 })
-    .AddCustomCsvFormatter() //csv formatýnda cýktý verir ama gerek yok 
     .AddXmlDataContractSerializerFormatters() //bunu ekleyince artýk xml formatýnda cýkýs verebýlýrýz
-    .AddApplicationPart(typeof(Presentation.AsemblyRefence).Assembly) //buaradaký kodda apý kýsýmlarýný farklý yerde yazýcagým ýcýn oranýn assambly kýsmýný verdýk buraya ordan bulup alýcak 
-    .AddNewtonsoftJson();
+    .AddCustomCsvFormatter() //csv formatýnda cýktý verir ama gerek yok 
+    .AddApplicationPart(typeof(Presentation.AsemblyRefence).Assembly); //buaradaký kodda apý kýsýmlarýný farklý yerde yazýcagým ýcýn oranýn assambly kýsmýný verdýk buraya ordan bulup alýcak 
+    //.AddNewtonsoftJson();
 
 
 
@@ -50,6 +51,11 @@ builder.Services.ConfigurActionFilters();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureCors();
 builder.Services.ConfigureDataShaper();
+builder.Services.AddCustomMediaTypes();
+
+builder.Services.AddScoped<LinkGenerator>();
+builder.Services.AddScoped<IBookLinks, BookLinks>();
+
 
 
 var app = builder.Build();
