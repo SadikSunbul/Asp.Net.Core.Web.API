@@ -1,9 +1,11 @@
 ﻿using Entities.DTO_DataTransferObject_;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using Presentation.ActionFilter;
+using Presentation.Controllers;
 using Ripositories.Contracts;
 using Ripositories.EFCore;
 using Services;
@@ -68,6 +70,8 @@ namespace _01_WebApi.extensions
                 if (systemTextJsonOutputFormatter is not null)
                 {
                     systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.btkakademi.hateoas+json");
+
+                    systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.btkakademi.apiroot+json");
                 }
 
                 var xmlOutputFormatter = config
@@ -77,7 +81,26 @@ namespace _01_WebApi.extensions
                 if (xmlOutputFormatter is not null)
                 {
                     xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.btkakademi.hateoas+xml");
+
+                    xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.btkakademi.apiroot+xml");
                 }
+            });
+        }
+
+        public static void ConfigureVersioning(this IServiceCollection services)
+        {
+            services.AddApiVersioning(opt =>
+            {
+                opt.ReportApiVersions = true; //apı versıon bılgısını respons header kısmına eklıyoruz
+                opt.AssumeDefaultVersionWhenUnspecified = true; //Kullanıcı herhangıbır versıyon bılgısı talep etmezse default versıyon u verır 
+                opt.DefaultApiVersion = new ApiVersion(1, 0);//default versıonun hne oldugunu soylerız(1.0) buyuk degısıklıkler 1 kucuk degısıklıkler 0 dedik
+                opt.ApiVersionReader = new HeaderApiVersionReader("api-version");
+                opt.Conventions.Controller<BooksKontroller>()
+                .HasApiVersion(new ApiVersion(1, 0));
+
+                opt.Conventions.Controller<BooksV2Controller>()
+                .HasDeprecatedApiVersion(new ApiVersion(2, 0));
+
             });
         }
     }

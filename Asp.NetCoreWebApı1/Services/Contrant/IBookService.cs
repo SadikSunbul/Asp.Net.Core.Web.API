@@ -18,5 +18,6 @@ namespace Services.Contrant
         Task<BookDto> CreateOneBookAsync(BookDto book);
         Task UpdateOneBookAsync(int id, BookDTOForUpdate book);
         Task DeleteOneBookAsync(int id, bool tracking = true);
+        Task<List<Book>> GetAllBooksAsync(bool trackChanges);
     }
 }

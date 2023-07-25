@@ -56,7 +56,7 @@ builder.Services.AddCustomMediaTypes();
 builder.Services.AddScoped<LinkGenerator>();
 builder.Services.AddScoped<IBookLinks, BookLinks>();
 
-
+builder.Services.ConfigureVersioning();
 
 var app = builder.Build();
 

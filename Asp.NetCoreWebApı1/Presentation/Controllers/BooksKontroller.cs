@@ -14,8 +14,10 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
+  //  [ApiVersion("1.0")]
     [ServiceFilter(typeof(LoFilterAttribute))]
     [ApiController]
+    //[Route("api/{v:apiversion}/books")]
     [Route("api/books")]
     public class BooksKontroller : ControllerBase
     {
@@ -27,7 +29,7 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
-        [HttpGet]
+        [HttpGet(Name ="GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAtribut))]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters param)
         {

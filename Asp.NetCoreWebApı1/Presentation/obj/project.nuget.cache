@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1hClIiWG0EyNdUETv8HZa6cPeNxdAT/eo2VCgD2754g4ZHmkhrDYnxP2JPU/OJ1RGU/CPZSrbrXiBtGdsFZHGQ==",
+  "dgSpecHash": "5aHLhjO6ID80Lr4bqw22pQtNKlgbDqOG2PTaEL/qk0wTHgJ8l8YVui1P0MkFAE9LgfpEmGrzKZR+G+kbrsjcXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.1.0\\microsoft.aspnetcore.mvc.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.1.0\\microsoft.aspnetcore.mvc.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.1.0\\microsoft.aspnetcore.responsecaching.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.1.0\\microsoft.aspnetcore.routing.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
