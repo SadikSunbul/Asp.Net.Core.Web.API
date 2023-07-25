@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "07nUbOmNvoD5DwsLLkAQ46j+gCt5d7M72zok3p6zg2XCUvq/xUsNOV9lEousQk8U2mqj+ITM9vyYokHPRor1kg==",
+  "dgSpecHash": "2kqJlxofQvq5sVB5V4wRhu4Vau2tgURXOX1bUfRUpkLYfVVsoVz4ML/pGyh514Exi/sMTiwPFWroQRK/Z71dEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\01-WebApi\\01-WebApi.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\artredline\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\marvin.cache.headers\\6.1.0\\marvin.cache.headers.6.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.0\\microsoft.aspnetcore.authentication.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.0\\microsoft.aspnetcore.authentication.core.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.1.0\\microsoft.aspnetcore.authorization.2.1.0.nupkg.sha512",

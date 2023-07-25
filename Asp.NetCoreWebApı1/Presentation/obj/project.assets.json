@@ -31,6 +31,18 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Marvin.Cache.Headers/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Marvin.Cache.Headers.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Marvin.Cache.Headers.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1464,6 +1476,20 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "Marvin.Cache.Headers/6.0.0": {
+      "sha512": "LYI20j8gPVDpvlvjHk0weRMBLNrU9vCl/zhYFe0H/p5UULHHdw5krZ5TlKvcumSbQMP0oYYc2oFJvXJ7uT0ViA==",
+      "type": "package",
+      "path": "marvin.cache.headers/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Marvin.Cache.Headers.dll",
+        "lib/netcoreapp3.1/Marvin.Cache.Headers.dll",
+        "marvin.cache.headers.6.0.0.nupkg.sha512",
+        "marvin.cache.headers.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.1.0": {
@@ -4577,6 +4603,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Marvin.Cache.Headers >= 6.0.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.1.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.1.0",
       "Services >= 1.0.0"
@@ -4631,6 +4658,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Marvin.Cache.Headers": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Microsoft.AspNetCore.Mvc.Core": {
             "target": "Package",
             "version": "[2.1.0, )"

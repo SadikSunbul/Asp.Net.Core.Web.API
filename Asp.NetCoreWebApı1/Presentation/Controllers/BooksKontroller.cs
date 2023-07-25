@@ -14,11 +14,12 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
-  //  [ApiVersion("1.0")]
+    //  [ApiVersion("1.0")]
     [ServiceFilter(typeof(LoFilterAttribute))]
     [ApiController]
     //[Route("api/{v:apiversion}/books")]
     [Route("api/books")]
+    [ResponseCache(CacheProfileName = "5mins")]
     public class BooksKontroller : ControllerBase
     {
 
@@ -29,8 +30,9 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
-        [HttpGet(Name ="GetAllBooksAsync")]
+        [HttpGet(Name = "GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAtribut))]
+        [ResponseCache(Duration = 60)]//60 snlık bekleem ekledik
         public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters param)
         {
             var linkparameters = new LinkParameters()
@@ -43,7 +45,7 @@ namespace Presentation.Controllers
 
             Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(linkresult.metaData));
 
-            return linkresult.linkRespons.HasLinks ? 
+            return linkresult.linkRespons.HasLinks ?
                 Ok(linkresult.linkRespons.LinkedEntities) :
                 Ok(linkresult.linkRespons.ShapedEntites);
 

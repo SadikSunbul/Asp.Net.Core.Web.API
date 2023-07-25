@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5aHLhjO6ID80Lr4bqw22pQtNKlgbDqOG2PTaEL/qk0wTHgJ8l8YVui1P0MkFAE9LgfpEmGrzKZR+G+kbrsjcXg==",
+  "dgSpecHash": "f9snyhRjZP+3zbXIJR9UjL/BYAjBuQJiLKVBuxgmFCYYvce5C2mks8MlBx84ISHCsv4QA7OFRu2c5+XForoZgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artredline\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\artredline\\.nuget\\packages\\marvin.cache.headers\\6.0.0\\marvin.cache.headers.6.0.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.0\\microsoft.aspnetcore.authentication.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.0\\microsoft.aspnetcore.authentication.core.2.1.0.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.1.0\\microsoft.aspnetcore.authorization.2.1.0.nupkg.sha512",

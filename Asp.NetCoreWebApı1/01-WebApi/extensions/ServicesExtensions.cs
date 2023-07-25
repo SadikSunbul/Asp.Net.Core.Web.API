@@ -103,5 +103,7 @@ namespace _01_WebApi.extensions
 
             });
         }
+
+        public static void ConfugerResponseCaching(this IServiceCollection services) => services.AddResponseCaching();
     }
 }
