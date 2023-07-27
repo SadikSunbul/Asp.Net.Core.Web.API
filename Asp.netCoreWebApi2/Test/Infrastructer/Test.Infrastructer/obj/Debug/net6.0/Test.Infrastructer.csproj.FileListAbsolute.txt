@@ -1,0 +1,17 @@
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Infrastructer.deps.json
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Infrastructer.dll
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Infrastructer.pdb
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Application.dll
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Domain.dll
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Application.pdb
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\bin\Debug\net6.0\Test.Domain.pdb
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.csproj.AssemblyReference.cache
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.AssemblyInfoInputs.cache
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.AssemblyInfo.cs
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.csproj.CoreCompileInputs.cache
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.csproj.CopyComplete
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.dll
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\refint\Test.Infrastructer.dll
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\Test.Infrastructer.pdb
+C:\Users\artredline\Desktop\Test\Infrastructer\Test.Infrastructer\obj\Debug\net6.0\ref\Test.Infrastructer.dll

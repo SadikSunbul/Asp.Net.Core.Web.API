@@ -1,0 +1,12 @@
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\bin\Debug\net6.0\Test.Domain.deps.json
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\bin\Debug\net6.0\Test.Domain.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\bin\Debug\net6.0\Test.Domain.pdb
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.csproj.AssemblyReference.cache
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.AssemblyInfoInputs.cache
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.AssemblyInfo.cs
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.csproj.CoreCompileInputs.cache
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\refint\Test.Domain.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\Test.Domain.pdb
+C:\Users\artredline\Desktop\Test\Core\Test.Domain\obj\Debug\net6.0\ref\Test.Domain.dll

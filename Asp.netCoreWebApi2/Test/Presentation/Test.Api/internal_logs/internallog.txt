@@ -1,0 +1,206 @@
+2023-07-20 06:27:01.1727 Info Message Template Auto Format enabled
+2023-07-20 06:27:02.0744 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 06:27:02.1741 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 08:26:07.1269 Info Message Template Auto Format enabled
+2023-07-20 08:26:07.2781 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 08:26:07.3190 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 11:08:58.1190 Info Message Template Auto Format enabled
+2023-07-20 11:08:58.2302 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 11:08:58.2754 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 18:28:49.1679 Info Message Template Auto Format enabled
+2023-07-20 18:28:49.2939 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 18:28:49.3346 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 18:31:35.6480 Info Message Template Auto Format enabled
+2023-07-20 18:31:35.8114 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 18:31:35.8558 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 18:32:55.6215 Info Message Template Auto Format enabled
+2023-07-20 18:32:55.7780 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 18:32:55.8313 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 18:44:25.1475 Info Message Template Auto Format enabled
+2023-07-20 18:44:25.2982 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 18:44:25.3384 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-20 18:46:17.5321 Info Message Template Auto Format enabled
+2023-07-20 18:46:17.6869 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-20 18:46:17.7487 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 06:22:59.9439 Info Message Template Auto Format enabled
+2023-07-21 06:23:00.7273 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 06:23:00.7959 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 06:24:31.8240 Info Message Template Auto Format enabled
+2023-07-21 06:24:31.9648 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 06:24:32.0011 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 06:33:59.5287 Info Message Template Auto Format enabled
+2023-07-21 06:33:59.8340 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 06:33:59.8701 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 06:35:14.0923 Info Message Template Auto Format enabled
+2023-07-21 06:35:14.2451 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 06:35:14.2862 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 06:37:37.5630 Info Message Template Auto Format enabled
+2023-07-21 06:37:37.7796 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 06:37:37.8406 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 09:46:03.5876 Info Message Template Auto Format enabled
+2023-07-21 09:46:03.7162 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 09:46:03.7524 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:09:41.8757 Info Message Template Auto Format enabled
+2023-07-21 15:09:42.0171 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:09:42.0648 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:10:45.6489 Info Message Template Auto Format enabled
+2023-07-21 15:10:45.8535 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:10:45.9165 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:11:58.9891 Info Message Template Auto Format enabled
+2023-07-21 15:11:59.1253 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:11:59.1744 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:13:31.5696 Info Message Template Auto Format enabled
+2023-07-21 15:13:31.7988 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:13:31.8403 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:18:07.7597 Info Message Template Auto Format enabled
+2023-07-21 15:18:07.9064 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:18:07.9551 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:25:49.5763 Info Message Template Auto Format enabled
+2023-07-21 15:25:49.7162 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:25:49.7565 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:27:23.9389 Info Message Template Auto Format enabled
+2023-07-21 15:27:24.0995 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:27:24.1451 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:28:50.5004 Info Message Template Auto Format enabled
+2023-07-21 15:28:50.6543 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:28:50.7415 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:30:05.0039 Info Message Template Auto Format enabled
+2023-07-21 15:30:05.2023 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:30:05.3376 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:31:43.5069 Info Message Template Auto Format enabled
+2023-07-21 15:31:43.6455 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:31:43.6879 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:34:24.5190 Info Message Template Auto Format enabled
+2023-07-21 15:34:24.6529 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:34:24.6902 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:35:20.3856 Info Message Template Auto Format enabled
+2023-07-21 15:35:20.5275 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:35:20.5729 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:41:45.4876 Info Message Template Auto Format enabled
+2023-07-21 15:41:45.6244 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:41:45.6665 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:42:15.7595 Info Message Template Auto Format enabled
+2023-07-21 15:42:15.9232 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:42:15.9714 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:43:39.1922 Info Message Template Auto Format enabled
+2023-07-21 15:43:39.3832 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:43:39.4253 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:44:26.1963 Info Message Template Auto Format enabled
+2023-07-21 15:44:26.3353 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:44:26.3838 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:45:52.2891 Info Message Template Auto Format enabled
+2023-07-21 15:45:52.4285 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:45:52.4717 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:47:10.9094 Info Message Template Auto Format enabled
+2023-07-21 15:47:11.0603 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:47:11.1042 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 15:48:01.9821 Info Message Template Auto Format enabled
+2023-07-21 15:48:02.1126 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 15:48:02.1563 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-21 18:01:42.5001 Info Message Template Auto Format enabled
+2023-07-21 18:01:42.6654 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-21 18:01:42.7066 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:10:02.2707 Info Message Template Auto Format enabled
+2023-07-22 13:10:02.4802 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:10:02.5278 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:11:22.3430 Info Message Template Auto Format enabled
+2023-07-22 13:11:22.5602 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:11:22.6530 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:15:10.4760 Info Message Template Auto Format enabled
+2023-07-22 13:15:10.6222 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:15:10.6686 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:16:42.3296 Info Message Template Auto Format enabled
+2023-07-22 13:16:42.4578 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:16:42.5646 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:18:24.1725 Info Message Template Auto Format enabled
+2023-07-22 13:18:24.3583 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:18:24.4009 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:19:36.1250 Info Message Template Auto Format enabled
+2023-07-22 13:19:36.2672 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:19:36.3121 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:22:09.3630 Info Message Template Auto Format enabled
+2023-07-22 13:22:09.5071 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:22:09.5512 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:24:45.8335 Info Message Template Auto Format enabled
+2023-07-22 13:24:45.9709 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:24:46.0120 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:25:47.1037 Info Message Template Auto Format enabled
+2023-07-22 13:25:47.2496 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:25:47.2918 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-22 13:26:43.9939 Info Message Template Auto Format enabled
+2023-07-22 13:26:44.1487 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-22 13:26:44.1963 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-24 05:34:09.8404 Info Message Template Auto Format enabled
+2023-07-24 05:34:09.9809 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-24 05:34:10.0178 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-24 05:35:20.0536 Info Message Template Auto Format enabled
+2023-07-24 05:35:20.3235 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-24 05:35:20.4162 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 10:27:32.1056 Info Message Template Auto Format enabled
+2023-07-26 10:27:32.1986 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 10:27:32.2257 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 10:27:34.0700 Info AppDomain Shutting down. LogFactory closing...
+2023-07-26 10:27:34.0826 Info LogFactory has been closed.
+2023-07-26 10:28:57.3920 Info Message Template Auto Format enabled
+2023-07-26 10:28:57.4891 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 10:28:57.5261 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 10:28:59.6175 Info AppDomain Shutting down. LogFactory closing...
+2023-07-26 10:28:59.6327 Info LogFactory has been closed.
+2023-07-26 10:46:01.7723 Info Message Template Auto Format enabled
+2023-07-26 10:46:01.9106 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 10:46:01.9482 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 10:46:03.7475 Info AppDomain Shutting down. LogFactory closing...
+2023-07-26 10:46:03.7599 Info LogFactory has been closed.
+2023-07-26 10:46:40.9773 Info Message Template Auto Format enabled
+2023-07-26 10:46:41.0595 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 10:46:41.1090 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 10:46:44.2314 Info AppDomain Shutting down. LogFactory closing...
+2023-07-26 10:46:44.2524 Info LogFactory has been closed.
+2023-07-26 11:44:02.6853 Info Message Template Auto Format enabled
+2023-07-26 11:44:02.8949 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 11:44:02.9326 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 14:11:12.2407 Info Message Template Auto Format enabled
+2023-07-26 14:11:13.0046 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 14:11:13.0962 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 14:37:12.1428 Info Message Template Auto Format enabled
+2023-07-26 14:37:12.2978 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 14:37:12.3445 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 14:38:46.2294 Info Message Template Auto Format enabled
+2023-07-26 14:38:46.3674 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 14:38:46.4046 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 14:39:52.7265 Info Message Template Auto Format enabled
+2023-07-26 14:39:52.8964 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 14:39:52.9507 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 14:42:17.1773 Info Message Template Auto Format enabled
+2023-07-26 14:42:17.3285 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 14:42:17.3734 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 14:43:10.6320 Info Message Template Auto Format enabled
+2023-07-26 14:43:10.7794 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 14:43:10.8235 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 15:55:27.2488 Info Message Template Auto Format enabled
+2023-07-26 15:55:27.3928 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 15:55:27.4282 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 16:39:53.0637 Info Message Template Auto Format enabled
+2023-07-26 16:39:53.2062 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 16:39:53.2536 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 20:56:36.2580 Info Message Template Auto Format enabled
+2023-07-26 20:56:36.3581 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 20:56:36.3987 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 20:56:38.5116 Info AppDomain Shutting down. LogFactory closing...
+2023-07-26 20:56:38.5247 Info LogFactory has been closed.
+2023-07-26 20:56:47.9970 Info Message Template Auto Format enabled
+2023-07-26 20:56:48.0781 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-26 20:56:48.1106 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-26 20:56:50.3687 Info AppDomain Shutting down. LogFactory closing...
+2023-07-26 20:56:50.3891 Info LogFactory has been closed.
+2023-07-27 08:35:32.3035 Info Message Template Auto Format enabled
+2023-07-27 08:35:32.5172 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-27 08:35:32.5969 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-27 08:43:53.8636 Info Message Template Auto Format enabled
+2023-07-27 08:43:54.0242 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-27 08:43:54.0867 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-27 08:48:01.5178 Info Message Template Auto Format enabled
+2023-07-27 08:48:01.6647 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-27 08:48:01.7131 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\artredline\Desktop\Test\Presentation\Test.Api\nlog.config
+2023-07-27 08:59:06.1812 Info AppDomain Shutting down. LogFactory closing...
+2023-07-27 08:59:06.2085 Info LogFactory has been closed.

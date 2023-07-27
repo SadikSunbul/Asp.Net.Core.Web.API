@@ -1,0 +1,15 @@
+C:\Users\artredline\Desktop\Test\Core\Test.Application\bin\Debug\net6.0\Test.Application.deps.json
+C:\Users\artredline\Desktop\Test\Core\Test.Application\bin\Debug\net6.0\Test.Application.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Application\bin\Debug\net6.0\Test.Application.pdb
+C:\Users\artredline\Desktop\Test\Core\Test.Application\bin\Debug\net6.0\Test.Domain.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Application\bin\Debug\net6.0\Test.Domain.pdb
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.csproj.AssemblyReference.cache
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.AssemblyInfoInputs.cache
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.AssemblyInfo.cs
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.csproj.CoreCompileInputs.cache
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.csproj.CopyComplete
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\refint\Test.Application.dll
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\Test.Application.pdb
+C:\Users\artredline\Desktop\Test\Core\Test.Application\obj\Debug\net6.0\ref\Test.Application.dll

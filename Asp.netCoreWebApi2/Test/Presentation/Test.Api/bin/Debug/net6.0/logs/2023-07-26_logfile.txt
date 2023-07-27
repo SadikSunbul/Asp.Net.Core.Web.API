@@ -1,0 +1,10 @@
+2023-07-26 14:38:49.5718 INFO Servise baglanırken kata oldu kod:500-eror:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/authentication" for actions - Test.Api.Controllers.AuthenticationController.RegisterUser (Test.Api),Test.Api.Controllers.AuthenticationController.UserLogin (Test.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-07-26 14:40:26.7357 WARN artredline:böyle bir kullanıcı yok veya şifreniz yanlış
+2023-07-26 14:40:31.1223 WARN artredline:böyle bir kullanıcı yok veya şifreniz yanlış
+2023-07-26 14:43:24.5338 WARN string:böyle bir kullanıcı yok veya şifreniz yanlış
+2023-07-26 15:58:25.0493 WARN artredline:böyle bir kullanıcı yok veya şifreniz yanlış

@@ -1,0 +1,3 @@
+2023-07-22 13:17:09.8088 INFO fgsh-> isimli ürün kayıt edildi
+2023-07-22 13:17:37.0363 INFO -> isimli ürün kayıt edildi
+2023-07-22 13:18:50.2643 INFO -> isimli ürün kayıt edildi

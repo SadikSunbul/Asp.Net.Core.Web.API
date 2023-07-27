@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Entities.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Ripositories.EFCore
 {
-    public class RepositoriesContext : DbContext
+    public class RepositoriesContext : IdentityDbContext<User>
     {
         public RepositoriesContext(DbContextOptions options) : base(options)
         {
