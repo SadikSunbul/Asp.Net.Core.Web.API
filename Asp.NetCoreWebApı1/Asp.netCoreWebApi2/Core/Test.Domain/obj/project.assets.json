@@ -825,11 +825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Domain\\Test.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Domain\\Test.Domain.csproj",
       "projectName": "Test.Domain",
-      "projectPath": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Domain\\Test.Domain.csproj",
+      "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Domain\\Test.Domain.csproj",
       "packagesPath": "C:\\Users\\artredline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Domain\\obj\\",
+      "outputPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

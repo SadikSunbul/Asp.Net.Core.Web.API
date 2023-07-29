@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "izpzrghoPNiuzb+IX2jf8kq6xqtr0Z7ly1+AmsqpE32dxjwjzVx/E6jzhuVgm+cmnCDDLJbZhnie9FumSap5Bw==",
+  "dgSpecHash": "Gtyru7T+Qf3vR7vsRATRNCzIeWo1FaCE+oVtywnUeBO4s4GIC+GllyYlvTupRSsK1tc/QMwBi9h7OpMRRtiMzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artredline\\Desktop\\Test\\Infrastructer\\Test.Persistence\\Test.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Infrastructer\\Test.Persistence\\Test.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artredline\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

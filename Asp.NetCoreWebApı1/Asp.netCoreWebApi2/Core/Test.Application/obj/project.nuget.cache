@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2pzOiUGYUNFRYH8wNW6G0CMfDfmgngVFLhEUNVgo0KmiAA58nJtxtVw27YR7RdREwL/Mu1OtJP7Qit+5EEojMA==",
+  "dgSpecHash": "5QLFwwvUZDeurYdd5Z3gxdtleUlohz7awmF2FCNSxh5O9lJszbNmtiBcUwiEyV4ORWeUEgIZB3bRDHC/1QTH6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Application\\Test.Application.csproj",
+  "projectFilePath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Application\\Test.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artredline\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\artredline\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

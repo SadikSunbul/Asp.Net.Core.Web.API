@@ -1788,11 +1788,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Application\\Test.Application.csproj",
+      "projectUniqueName": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Application\\Test.Application.csproj",
       "projectName": "Test.Application",
-      "projectPath": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Application\\Test.Application.csproj",
+      "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Application\\Test.Application.csproj",
       "packagesPath": "C:\\Users\\artredline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Application\\obj\\",
+      "outputPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1814,8 +1814,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Domain\\Test.Domain.csproj": {
-              "projectPath": "C:\\Users\\artredline\\Desktop\\Test\\Core\\Test.Domain\\Test.Domain.csproj"
+            "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Domain\\Test.Domain.csproj": {
+              "projectPath": "C:\\Users\\artredline\\Desktop\\Asp.Net.Core.Web.API\\Asp.NetCoreWebApı1\\Asp.netCoreWebApi2\\Core\\Test.Domain\\Test.Domain.csproj"
             }
           }
         }

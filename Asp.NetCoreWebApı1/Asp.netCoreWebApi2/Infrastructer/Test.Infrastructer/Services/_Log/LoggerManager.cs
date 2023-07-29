@@ -12,6 +12,7 @@ namespace Test.Infrastructer.Services._Log
     public class LoggerManager : ILoggerService
     {
         private static NLog.ILogger loger = LogManager.GetCurrentClassLogger();
+        
         public void LogDebug(string message) => loger.Debug(message);
 
         public void LogError(string message) => loger.Error(message);
