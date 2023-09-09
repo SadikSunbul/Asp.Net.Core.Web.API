@@ -1,0 +1,28 @@
+# Asp.Net.Core.Web.API
+
+- [x] Api
+- [x] Asp.Net Core
+- [x] Logging
+- [x] Moddels
+- [x] EfCore
+- [x] Katmanlı Mimari
+- [x] NLog
+- [x] Global Hata Yönetimi
+- [x] AutoMapper
+- [x] İçerik Pazarlıgı
+- [x] Doğrulama
+- [x] Asenkron Kod
+- [x] Eylem Filtreleri
+- [x] Sayfalama
+- [x] Filtreleme
+- [x] Arama
+- [x] Sıralama
+- [x] Veri Şekillendirme
+- [x] Hateoas
+- [x] Options ve Head
+- [x] Root Documentation
+- [x] Versiyonlama
+- [x] Ön Belleğe alma
+- [x] Hız Sınırlama
+- [x] Güvenlik
+- [x] Belgelendirme
